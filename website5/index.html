@@ -9,7 +9,56 @@
 </head>
 <body>
     <div>
-        <h1>Table Type 1</h1>
+        <h1>Table Type colspan+rowspan</h1>
+        <table>
+            <tr>
+                <th>OrderId</th>
+                <th>Item Name</th>
+                <th>Quantity</th>
+                <th>Unit price</th>
+                <th>Total Item price</th>
+            </tr>
+            <tr> 
+                <td rowspan="3">O1001</td>               
+                <td>Pepsi 500ml</td>
+                <td>5</td>
+                <td>50</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Pepsi 500ml</td>
+                <td>5</td>
+                <td>50</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                
+                <td colspan="3" >Total Order Price</td>
+                <td>250</td>
+            </tr>
+            <tr> 
+                <td rowspan="3">O1002</td>               
+                <td>Pepsi 500ml</td>
+                <td>5</td>
+                <td>50</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>Pepsi 500ml</td>
+                <td>5</td>
+                <td>50</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                
+                <td colspan="3" >Total Order Price</td>
+                <td>250</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1>Table Type colspan</h1>
         <table>
             <tr>
                 <th>Item Name</th>
