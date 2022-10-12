@@ -1,0 +1,45 @@
+html {
+    font-size: 10px;
+}
+h1 {
+    /* font-family: serif ; */
+    /* text-transform: lowercase; */
+    font-size: 5rem;
+    text-transform: capitalize;
+    text-shadow: 4px 4px 5px red;
+}
+
+/* h2{
+    font-family: sans-serif;
+    text-transform: uppercase;
+} */
+/* h3{
+    font-family: monospace;
+    text-transform: capitalize;
+} */
+/* h4{
+    font-family: cursive;
+} */
+/* h5{
+    font-family: fantasy;
+    font-weight: 500;
+} */
+
+p {
+    /* color: red; */
+    /* font-family: Arial; */
+    /* font-family: Verdana, sans-serif; */
+    /* font-weight: lighter; */
+    font-size: 1.5rem;
+    color: red;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* article{
+    font-weight: bolder;
+    text-decoration: line-through;
+} */
+h1+p {
+    background-color: yellow;
+    font-weight: bold;
+}
