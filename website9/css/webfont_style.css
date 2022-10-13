@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "myFont";
+    src: url("../font/lucon.ttf") format("ttf");
+  }
+  html {
+    font-family: myfont,serif;
+  }
+  
