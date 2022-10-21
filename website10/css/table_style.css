@@ -1,0 +1,42 @@
+html {
+    font-family: sans-serif;
+}
+
+/* px rem em ..... */
+form {
+    border:solid 2px red;
+    display: table;
+    margin: 0 auto;
+}
+
+form div {
+    
+    display: table-row;
+}
+
+form label,
+form input {
+    
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+form label {
+    border:solid 1px yellow;
+    width: 200px;
+    padding-right: 5%;
+    text-align: right;
+  }
+
+  form input {
+    border:solid 1px yellow;
+    width: 300px;
+  }
+  
+  form p {
+    display: table-caption;
+    caption-side: bottom;
+    width: 300px;
+    color: #999;
+    font-style: italic;
+  }

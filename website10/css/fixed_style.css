@@ -1,0 +1,16 @@
+.positioned {
+    background-color: orangered;
+    color:yellow;
+    position: fixed;
+    top: 130px;
+    left: 130px;
+  }
+  .positionedSticky {
+    border:solid 2px red;
+    background-color: lightsalmon;
+    opacity:var(1);
+    position: sticky;
+    top: 30px;
+    left: 30px;
+    width: 200px;
+  }

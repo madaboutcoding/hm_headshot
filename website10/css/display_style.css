@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    border:solid 2px yellow;
+  }
+  .box1,.box2,.box3{
+    border:solid 2px red;
+    padding:0.1rem;
+    margin :0.1rem;
+  }
+  .wrapper1 {
+    display: flex;
+    border:solid 2px yellow;
+  }
+  .wrapper1 >div {
+    flex:1;
+  }
