@@ -1,30 +1,40 @@
-table {
+/* a:link{
+  color:orange;
+  font-weight: bold;
+  font-size: larger;
+} */
+/* h1 {
+  color: white;
+  background-color: black;
+ 
+} */
+/* table {
     border-collapse: collapse;
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
     font-size: 0.8rem;
-  }
+  } */
   
-  td, th {
+  /* td, th {
     border: 1px solid rgb(190,190,190);
     padding: 10px 20px;
-  }
+  } */
   
-  th {
+  /* th {
     background-color: rgb(235,235,235);
-  }
+  } */
   
-  td {
+  /* td {
     text-align: center;
-  }
+  } */
   
-  tr:nth-child(even) td {
+  /* tr:nth-child(even) td {
     background-color: rgb(250,250,250);
-  }
+  } */
   
-  tr:nth-child(odd) td {
+  /* tr:nth-child(odd) td {
     background-color: rgb(245,245,245);
-  }
+  } */
   
 
 /* table{
@@ -45,21 +55,57 @@ table {
     border: solid 2px red;
 } */
 /* CSS Class selector : grouping different element together */
-.container{
+/* .container{
     background-color: darkred;
     color:white;
     display:block;
-}
-.row{
+} */
+/* .row{
     border:solid yellow 1px;
     display: inline-flex;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 1.5rem;
     padding:0.8rem;
-}
-.column{
+} */
+/* .column{
     border: solid 2px red;
     float:left;
     margin: 0.8rem;
     padding:0.8rem;
+} */
+
+body{
+  background-color: black;
+  color:white;
+}
+
+/* Tag */
+h1{
+  background-color: blue;
+  color:azure;
+}
+.row{
+  background-color: blueviolet;
+}
+
+#myH1{
+  background-color: maroon;
+}
+
+a{
+  background-color: green;
+  color:blue;
+}
+/* attribute */
+a[href="http://www.google.com"]{
+  background-color: yellow;
+  color:red;
+}
+a:hover {
+  font-size: larger;
+  
+}
+
+a:link{
+  text-decoration:none ;
 }
