@@ -1,0 +1,21 @@
+html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    
+}
+body{
+    background-color: black;
+    color:white;
+}
+nav ul{
+    background-color: crimson;
+    height: 2.5rem;
+    width: 100%;  
+}
+ul {
+    display: inline-flex;        
+}
+
+ul> li{
+    list-style: none;
+    padding: 0.8rem;
+    
+}

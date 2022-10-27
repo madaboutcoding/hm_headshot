@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration_style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Introduction to HTML Form+JS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Registration</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section id="regform">
+
+        <form action="#" method="get" onsubmit="return onButtonClick()">
+
+            <div class="container">
+                <div class="row">
+                    <label class="column" for="userName">User Name</label>
+                    <input class="column" type="text" name="userName" id="userName" >
+                    <span id="errUserName"></span>
+                </div>
+                <div class="row">
+                    <label class="column" for="email">Email </label>
+                    <input class="column" type="email" name="email" id="email" >
+                    <span id="errEmail"></span>
+                </div>
+                <div class="row">
+                    <button  class="column" >Register</button>
+                </div>
+            </div>
+            <!-- <div class="container">
+                <div class="row">
+                    <label class="column" for="userName">User Name</label>
+                    <input class="column" type="text" name="userName" id="userName" required>
+                </div>
+                <div class="row">
+                    <label class="column" for="email">Email </label>
+                    <input class="column" type="email" name="email" id="email" required>
+                </div>
+                <div class="row">
+                    <button  class="column" >Register</button>
+                </div>
+            </div> -->
+            
+        </form>
+
+    </section>
+    <footer>
+        <h6>Hopping Minds Head Shots &copy; of Oct'2022</h6>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

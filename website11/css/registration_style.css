@@ -1,0 +1,15 @@
+#regform{
+    border:solid 2px red;
+    display: block;    
+}
+.container{
+    display: block;    
+}
+.row{
+    width: 100%;   
+    border: solid 2px yellow;
+}
+.column{
+    width: max-content;   
+    border: solid 2px cyan;
+}
