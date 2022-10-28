@@ -23,12 +23,14 @@ function onLoad(){
 
     const btn_dec_p1=document.createElement("button");
     btn_dec_p1.innerText="-";
+    btn_dec_p1.onclick=onDec;
 
     const span_quantity_p1=document.createElement("span");
     span_quantity_p1.innerText=0;
     
     const btn_inc_p1=document.createElement("button");
     btn_inc_p1.innerText="+";
+    btn_inc_p1.onclick=onIncr;
 
 
     pre_p1.append(img_p1);
@@ -40,4 +42,10 @@ function onLoad(){
     div_p1.append(pre_p1);
     root.append(div_p1);
 
+}
+function onDec(){
+    alert("onDec Called");
+}
+function onIncr(){
+    alert("onInc Called");
 }
