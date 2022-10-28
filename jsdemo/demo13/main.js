@@ -15,7 +15,8 @@ const app=(function(){
     this.init();
     this.service();
     this.destroy();
-})();
+});
 
 
-app();
+//  app();
+myApp=new app();
