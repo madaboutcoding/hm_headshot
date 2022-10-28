@@ -46,14 +46,14 @@ function onLoad(){
 }
 
 function onDec(){
-    alert("onDec Called");
+    // alert("onDec Called");
     const span_quantity_p1=document.getElementById("1001");
     counter=counter-1;
     span_quantity_p1.innerText=counter;
 
 }
 function onIncr(){
-    alert("onInc Called");    
+    // alert("onInc Called");    
     const span_p1=document.getElementById("1001");
     counter=counter+1;
     span_p1.innerText=counter;
