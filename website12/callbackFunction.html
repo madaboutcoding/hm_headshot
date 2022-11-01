@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.forEach()</h2>
+
+<p>Calls a function once for each array element.</p>
+
+<p id="demo"></p>
+
+<script>
+var txt = "";
+function myFunction1(){
+	txt=txt+"<br/> Will be called by another function";
+}
+
+function myCallerFunction(f1){
+	txt=txt+"<br/> Caller Function called";
+    f1();
+    txt=txt+"<br/> Caller function work done";
+}
+myCallerFunction(myFunction1);
+document.getElementById("demo").innerHTML = txt;
+
+</script>
+
+</body>
+</html>

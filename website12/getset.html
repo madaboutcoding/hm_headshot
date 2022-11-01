@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Getters and Setters</h2>
+
+<p>Getters and setters allow you to get and set properties via methods.</p>
+
+<p>This example creates a getter for a property called fullName.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+// Create an object:
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  
+  get fName() {
+    return this.firstName;    
+  },
+  set fName(value) {
+    this.firstName=value;    
+  },
+  get lName() {
+    return this.lastName;    
+  },
+  set lName(value) {
+    this.lastName=value;    
+  },
+  get fullName() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+// Display data from the object using a getter:
+document.getElementById("demo1").innerHTML = person.fullName;
+//person.changeName("Wayn","Dyer");
+person.fName="Wayn";
+person.lName="Dyer";
+document.getElementById("demo2").innerHTML = person.fullName;
+
+document.getElementById("demo3").innerHTML = person.fName;
+document.getElementById("demo4").innerHTML = person.lName;
+
+</script>
+
+</body>
+</html>
