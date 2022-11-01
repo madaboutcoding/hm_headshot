@@ -74,3 +74,47 @@ oddNumbers.add(13);
 oddNumbers.add(15);
 oddNumbers.add(17);
 console.log(oddNumbers);
+
+function sum(...numbers){
+    let v_sum=0;
+    for(n of numbers){
+        v_sum=v_sum+n;
+    }
+    return v_sum;
+}
+console.log("Sum of first 10 numbers ");
+console.log(sum(1,2,3,4,5,6,7,8,9,10));
+console.log("Sum of first 5 numbers ");
+console.log(sum(1,2,3,4,5));
+console.log("Sum of  1 number ");
+console.log(sum(1));
+console.log("Sum of 0 number ");
+console.log(sum());
+
+const array1=["abc",..."pqr"]
+console.log(array1);
+
+const name1=Array.from("DHANASHREE Dhanashree");
+console.log(name1);
+
+
+console.log(colors);
+const keys=colors.keys();//index number of elements present in array
+console.log(keys);
+for(let k of keys){
+    console.log(k);
+}
+
+
+
+const numbers=[10,20,30,40,50]
+//exactly one value -> find
+let numberGT35=numbers.find((v,i,a)=>{return v>35;})
+console.log(numberGT35);
+
+//list of values fullfilling the criteria=> filter
+let filterNumberGt35=numbers.filter((v,i,a)=>v>35);
+console.log(filterNumberGt35);
+
+let findIndexof40=numbers.findIndex((v,i,a)=>v==40);
+console.log("findIndexof40 = "+(parseInt(findIndexof40)+1));
