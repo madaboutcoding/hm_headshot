@@ -30,3 +30,47 @@ const obj1=new function1();
 obj1.outF1();
 obj1.outF2();
 obj1.outF3();
+
+
+const colors=["red","green","blue"];
+console.log("Using for in");
+for(let i in colors){
+    console.log(colors[i]);
+}
+// for/of Loop
+console.log("Using for/of ");
+for(let color of colors){
+    console.log(color);
+}
+
+// 
+const colors_map=new Map([
+    ["ff0000","RED"],
+    ["00ff00","GREEN"],
+    ["0000ff","BLUE"]
+]);
+console.log("Line 52"+colors_map[0]);
+console.log("Line 53"+colors_map.get("ff0000"));
+console.log("Line 54"+colors_map.get("00ff00"));
+console.log("Line 55"+colors_map.get("0000ff"));
+
+const colors_map1=new Map([
+    ["RED"  ,"ff0000"],
+    ["GREEN","00ff00"],
+    ["BLUE" ,"0000ff"],
+    ["BLUE" ,"00ffff"]
+]);
+
+console.log("colors_map1.get('RED')= "+colors_map1.get("RED"));
+console.log("colors_map1.get('red')= "+colors_map1.get("red"));
+
+console.log("colors_map1.get('BLUE')= "+colors_map1.get("BLUE"));
+
+
+const oddNumbers=new Set();
+oddNumbers.add(11);
+oddNumbers.add(11);
+oddNumbers.add(13);
+oddNumbers.add(15);
+oddNumbers.add(17);
+console.log(oddNumbers);
