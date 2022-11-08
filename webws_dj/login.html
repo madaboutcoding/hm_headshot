@@ -10,6 +10,39 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="container">
+        <form action="welcome.html" >
+            <!-- <fieldset disabled>
+                <div class="mb-3">
+                    <label for="userName" class="form-label">userName</label>
+                    <input type="userName"  class="form-control" disabled name="userName" id="userName" aria-describedby="userNameHelp">                
+                    <div id="userNameHelp" class="form-text">
+                        We'll never share your userName with anyone else.
+                    </div>
     
+                </div>
+                    
+            </fieldset>  -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email"  class="form-control"  name="email" id="email" aria-describedby="emailHelp">                
+                <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                </div>
+
+            </div>
+            <div class="mb-3">
+<label for="password"  class="form-label">Password</label>
+<input type="password"  class="form-control" name="password" id="password" aria-describedby="passwordHelpText">
+<div id="passwordHelpText" class="form-text">
+    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+</div>
+
+            </div>
+            <div class="mb-3">
+                <input type="submit"  class="form-control" value="Login">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
