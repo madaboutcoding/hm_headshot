@@ -1,0 +1,14 @@
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  border: solid 2px red;
+}
+@mixin important-text {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    border: 1px solid blue;
+  }

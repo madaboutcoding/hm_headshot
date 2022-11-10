@@ -1,0 +1,79 @@
+@import "reset";
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+.danger {
+    @include important-text;
+    background-color: green;
+  }
+
+$bgcolor:#272727;
+$fontcolor1:#747474;
+$fontcolor2:#ff652f;
+$fontcolor3:#ffe400;
+$fontcolor4:#14a76c;
+$fontcolor5:#09f72b;
+$fontcolor6:#32cdf0;
+body{
+    background-color: $bgcolor;
+}
+
+h1{
+    color:$fontcolor1;
+}
+h2{color:$fontcolor2;}
+h3{color:$fontcolor3;}
+h4{color:$fontcolor4;}
+h5{
+    $fontcolor5:#36541d;
+    color:$fontcolor5;
+}
+
+p{
+    color:$fontcolor5
+}
+h6{
+    color:$fontcolor6;
+}
+span{
+    $fontcolor6:#efd2f3 !global;
+    color:$fontcolor6;
+}
+
+nav {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }
+  
+  .button-basic  {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button-report  {
+    @extend .button-basic;
+    background-color: red;
+  }
+  
+  .button-submit  {
+    @extend .button-basic;
+    background-color: green;
+    color: white;
+  } 
