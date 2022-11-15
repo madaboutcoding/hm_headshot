@@ -1,0 +1,13 @@
+body{
+    background-color: navy;
+    color:white;
+}
+nav{
+    background-color: white;
+    border:solid 2px navy;
+}
+.err{
+    color:red;
+    font-size: bold;
+    background-color: yellow;
+}
