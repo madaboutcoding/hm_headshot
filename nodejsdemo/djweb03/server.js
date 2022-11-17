@@ -3,7 +3,9 @@ import http from 'http';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
-
+// import bodyParser from 'body-parser';
+// http.use(bodyParser.json()); // support json encoded bodies
+// http.use(bodyParser.urlencoded({ extended: true })); // support e
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -69,19 +71,37 @@ function onRequest(req, resp) {
         }
 
     } else if (method == "POST") {
+        // console.log(req);
+
         switch (url) {
             case '/login':
             case '/welcome.html':
-                fs.readFile(__dirname + '/welcome.html', (err, data) => {
-                    resp.setHeader("Content-Type", "text/html");
-                    if (err) {
-                        resp.write("Err: " + err);
-                    }
-                    else {
-                        resp.write(data)
-                    }
-                    resp.end();
-                })
+                // const userName=req.body.userName;
+                // const password=req.body.password;
+                // if(userName==="admin"&&password==="P@ssword123"){
+                    fs.readFile(__dirname + '/welcome.html', (err, data) => {
+                        resp.setHeader("Content-Type", "text/html");
+                        if (err) {
+                            resp.write("Err: " + err);
+                        }
+                        else {
+                            resp.write(data)
+                        }
+                        resp.end();
+                    })
+                // }else{
+                //     fs.readFile(__dirname + '/login.html', (err, data) => {
+                //         resp.setHeader("Content-Type", "text/html");
+                //         if (err) {
+                //             resp.write("Err: " + err);
+                //         }
+                //         else {
+                //             resp.write(data)
+                //         }
+                //         resp.end();
+                //     })
+                // }
+                
                 break;
 
         }
