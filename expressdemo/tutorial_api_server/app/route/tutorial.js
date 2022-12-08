@@ -15,22 +15,13 @@ route.get('/tutorials/published/:published',TutorialController.findAllPublished)
 // POST	api/tutorials	add new Tutorial
 route.post('/tutorials',TutorialController.create)
 
-// PUT	api/tutorials/:id	update Tutorial by id
-route.put('/tutorials/:id',(req,resp)=>{
-    resp.setHeader("Content-Type","text/html");
-    resp.send("PUT	api/tutorials/:id	update Tutorial by id")
-})
+// PUT	api/tutorials/:title	update Tutorial by id
+route.put('/tutorials/:title',TutorialController.update)
 
-// DELETE	api/tutorials/:id	remove Tutorial by id
-route.delete('/tutorials/:id',(req,resp)=>{
-    resp.setHeader("Content-Type","text/html");
-    resp.send("DELETE	api/tutorials/:id	remove Tutorial by id")
-})
+// DELETE	api/tutorials/:title	remove Tutorial by id
+route.delete('/tutorials/:title',TutorialController.deleteOne)
 
 // DELETE	api/tutorials	remove all Tutorials
-route.delete('/tutorials',(req,resp)=>{
-    resp.setHeader("Content-Type","text/html");
-    resp.send("DELETE	api/tutorials	remove all Tutorials")
-})
+route.delete('/tutorials',TutorialController.deleteAll)
 
 export default route;

@@ -55,10 +55,38 @@ TutorialController.create = (req, resp) => {
 
 }
 // update
-TutorialController.update = (req, resp) => { }
+TutorialController.update = (req, resp) => { 
+    const title = req.params.title;
+    const description=req.body.description;
+    Tutorial.findOneAndUpdate({ "title": title },{$set:{"description":description}}, 
+    (err, docs) => {
+        resp.setHeader("Content-Type", "application/json");
+        if (err) {
+            resp.send({ "Error": err })
+        }
+        resp.send({"Success": "Record updated"})
+    });
+}
 // delete
-TutorialController.deleteOne = (req, resp) => { }
+TutorialController.deleteOne = (req, resp) => {
+    const title = req.params.title;
+    Tutorial.findOneAndDelete({ "title": title },(err, docs) => {
+        resp.setHeader("Content-Type", "application/json");
+        if (err) {
+            resp.send({ "Error": err })
+        }
+        resp.send({"Success": "Record Deleted"})
+    })
+ }
 // deleteAll
-TutorialController.deleteAll = (req, resp) => { }
+TutorialController.deleteAll = (req, resp) => {
+    Tutorial.deleteMany({},(err, docs) => {
+        resp.setHeader("Content-Type", "application/json");
+        if (err) {
+            resp.send({ "Error": err })
+        }
+        resp.send({"Success": "All Record Deleted"})
+    })
+ }
 
 export default TutorialController;
