@@ -15,8 +15,8 @@ const productList=[
     {"pid":1003,"pname":"Mazza 500ml","unitPrice":30.00},
 ]
 // ########### REST API  ########### 
-app.use(express.json());
-app.use(express.urlencoded({extended:true}));
+	app.use(express.json());
+	app.use(express.urlencoded({extended:true}));
 
 app.post("/product/add",(req,resp)=>{
     resp.setHeader("Content-Type","application/json")

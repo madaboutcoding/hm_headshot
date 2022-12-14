@@ -1,0 +1,11 @@
+<form>
+	<input id="firstName" name="firstName">
+</form>
+
+Post
+request=>urlencoded=>firstName:"Dhanashree"
+
+
+https://courses.hopingminds.com/s/dashboard
+https://courses.hopingminds.com/s/store?redirectToMicroFE=false
+https://courses.hopingminds.com/s/allcourses

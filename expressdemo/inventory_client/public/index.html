@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js"
+        integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <h1>Call the Rest API</h1>
+    <a href="http://localhost:3000/api/products">Get All Products</a>
+    <button id="btnGetAll">All Products</button>
+    <div id="root_all"></div>
+    <div>
+        <input type="text" name="pname" id="pname" placeholder="Enter Product Name" />
+        <input type="button" id="getByPname" value="Get Product">
+    </div>
+    <div id="root_bypname"></div>
+    <div>
+        <input type="text" name="pid" id="pid" placeholder="Enter Product Id" />
+        <input type="button" id="getByPid" value="Get Product">
+    </div>
+    <div id="root_bypid"></div>
+    <h2>Local Storage</h2><div id="result"></div>
+    <h2>Session Storage</h2><div id="result1"></div>
+    <script>
+        // Check browser support
+        if (typeof (Storage) !== "undefined") {
+            // Store
+            localStorage.setItem("lastname", "Smith");
+            sessionStorage.setItem("lastname", "Smith");
+            // Retrieve
+            document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+            document.getElementById("result1").innerHTML = localStorage.getItem("lastname");
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+            document.getElementById("result1").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+    </script>
+</body>
+
+</html>
