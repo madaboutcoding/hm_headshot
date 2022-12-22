@@ -1,0 +1,12 @@
+.containe{
+    background-color: gray;;
+    color:black;
+    display:inline-block
+}
+
+.col-sm-2{
+    text-indent: 0.02rem!important;
+    text-align: left!important;
+    padding:0.02rem!important;
+    border:2px solid red!important;
+}

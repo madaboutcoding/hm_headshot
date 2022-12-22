@@ -10,7 +10,7 @@ ProductController.findAll = (req, resp) => {
 
             resp.status(404).send("Error ")
         } else {
-
+            console.log(doc);
             resp.status(200).send(doc)
         }
     })

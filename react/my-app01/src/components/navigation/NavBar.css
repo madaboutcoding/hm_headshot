@@ -1,0 +1,15 @@
+.NavBar-div{
+    background-color: gray;
+    color:black;
+    font-weight: bold;
+    text-align: right;
+}
+.NavBar-nav{
+    margin:0.02rem;    
+}
+.NavBar-ul li{
+    display:inline-flex;
+    list-style: none;
+    padding:5px;
+    
+}

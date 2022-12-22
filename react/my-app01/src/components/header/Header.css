@@ -1,0 +1,15 @@
+
+.Header{
+    background-color: navy;
+    color:white;
+    display: inline-flex;
+    width: 100%;
+  }
+.Header-logo{
+    width: 150px;
+    height: 150px;
+}
+.Header-h1{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
